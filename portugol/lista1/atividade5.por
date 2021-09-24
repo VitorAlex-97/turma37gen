@@ -5,7 +5,6 @@ aluno. Considerar que a média é ponderada e que o peso das notas é: 2,3 e 5,
 respectivamente.
 */
 
-
 programa
 {
 	
@@ -33,7 +32,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 114; 
+ * @POSICAO-CURSOR = 196; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
