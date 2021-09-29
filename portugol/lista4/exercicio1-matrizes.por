@@ -1,5 +1,5 @@
 /*
-				ATIVIDADE (MATRIZES)
+				ATIVIDADE 1 (MATRIZES)
 Escreve um programa que lê duas matrizes N1 (4,6) e N2(4,6) e cria:
 
 a) Uma matriz M1 cujos elementos serão as somas dos elementos de mesma posição
@@ -11,8 +11,8 @@ posição das matrizes N1 e N2.
 
 
 programa
-{	const inteiro LINHA = 2
-	const inteiro COLUNA = 2
+{	const inteiro LINHA = 4
+	const inteiro COLUNA = 6
 	inteiro N1[LINHA][COLUNA], N2[LINHA][COLUNA]
 	inteiro M1[LINHA][COLUNA], M2[LINHA][COLUNA]
 	
@@ -23,7 +23,7 @@ programa
 		escreva("LENDO MATRIZ N1\n")
 		para(inteiro i=0; i<LINHA; i++) {
 			para(inteiro j=0; j<COLUNA; j++) {
-				escreva("Digite o elemento ["+(i+1)+","+(j+1)+"]: ")
+				escreva("Digite o elemento [linha"+(i+1)+", coluna"+(j+1)+"]: ")
 				leia(N1[i][j])
 			}
 		}
@@ -33,7 +33,7 @@ programa
 		escreva("LENDO MATRIZ N2\n")
 		para(inteiro i=0; i<LINHA; i++) {
 			para(inteiro j=0; j<COLUNA; j++) {
-				escreva("Digite o elemento ["+(i+1)+","+(j+1)+"]: ")
+				escreva("Digite o elemento [linha"+(i+1)+", coluna"+(j+1)+"]: ")
 				leia(N2[i][j])
 			}
 		}
@@ -50,7 +50,7 @@ programa
 
 		escreva("------------------------------\n")
 		
-		escreva("IMPRIMINDO M2 (subtraçaõ) \n")
+		escreva("IMPRIMINDO M2 (subtração) \n")
 		//SUBTRAINDO N2 DE N1, E ARMAZENDO EM M2
 		para(inteiro i=0; i<LINHA; i++) {
 			para(inteiro j=0; j<COLUNA; j++) {
@@ -66,7 +66,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1261; 
+ * @POSICAO-CURSOR = 374; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

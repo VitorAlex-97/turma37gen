@@ -12,7 +12,6 @@ programa
 	{
 		real notas[5]
 		real maiorNota = 0.00
-		inteiro atividadeComMaiorNota = 0
 
 		 para (inteiro i=0; i<5; i++) {
 		 	notas[i] = 0.0
@@ -21,11 +20,10 @@ programa
 
 		 	se (notas[i] >= maiorNota) {
 		 		maiorNota = notas[i]
-		 		atividadeComMaiorNota = i+1
 		 	}
 		 }
 
-		 escreva("\nA maior pontuação foi ", maiorNota, " (atividade ", atividadeComMaiorNota, ")")
+		 escreva("\nA maior nota foi ", maiorNota)
 		  
 		 
 	}
@@ -35,7 +33,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 430; 
+ * @POSICAO-CURSOR = 467; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
