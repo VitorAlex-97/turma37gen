@@ -17,6 +17,8 @@ programa
 		real numeroDigitado = 0.00, mediaNumeros = 0.00, somaNumeros = 0.00
 		inteiro contador = 0
 
+		escreva("DIGITE NÚMEROS POSITIVOS, OU NEGATIVO PARA SAIR\n")
+		escreva("-------------------------------------------------\n")
 		enquanto (numeroDigitado >= 0) {
 			escreva(contador+1,"º Número: ")
 			leia(numeroDigitado)
@@ -27,7 +29,7 @@ programa
 			
 			contador++
 		}
-		escreva("-----------------------\n")
+		escreva("--------------------------------------------------\n")
 
 		contador = contador - 1
 		mediaNumeros = (somaNumeros / contador)
@@ -44,7 +46,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 936; 
+ * @POSICAO-CURSOR = 885; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
