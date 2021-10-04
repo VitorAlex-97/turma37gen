@@ -110,7 +110,7 @@ programa
 								leia(quantidadeDigAux[x])
 							} 
 							senao {
-								escreva("\nNÃO HÁ ESSA QUANTIDADE NO ESTOQUE")
+								escreva("\nNÃO HÁ ESTA QUANTIDADE NO ESTOQUE!")
 								escreva("\nDigite novamente a quantidade: ")
 								leia(quantidadeDigAux[x])
 							}
@@ -122,19 +122,11 @@ programa
 				leia(op)
 				op= txt.caixa_alta(op)
 				enquanto(op!="S" e op!="N"){
-					escreva("Opção inválida Tente novamente!!")
+					escreva("Opção inválida. Tente novamente!!")
 					escreva("\nContinua a compra S/N: ")
 				     leia(op)
 				     op= txt.caixa_alta(op)
-				}
-				//Subtração Estoque
-				/*
-				para(inteiro x = 0; x<10;x++){
-					se(codCarrinho==codigoProduto[x]){
-						estoque[x]=estoque[x]-quantidadeFinal[x]
-					}
-				}
-				*/	
+				}	
 				limpa()				
 			}
 			limpa()
@@ -256,7 +248,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 3895; 
+ * @POSICAO-CURSOR = 4889; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
