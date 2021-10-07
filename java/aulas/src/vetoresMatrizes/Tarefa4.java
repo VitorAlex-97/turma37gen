@@ -1,6 +1,7 @@
 package vetoresMatrizes;
 
 import java.util.Locale;
+import java.util.Random;
 import java.util.Scanner;
 
 public class Tarefa4 {
@@ -15,17 +16,19 @@ public class Tarefa4 {
 		
 		Locale.setDefault(Locale.US);
 		Scanner leia = new Scanner(System.in);
+		Random rand = new Random(); //INSTANCIANDO O OBJETO RANDOM
 		
 		int matiz[][] = new int[3][3];
 		int somaElementos = 0;
 		int somaDiagonalPrincipal = 0;
 		
-		System.out.println("PREENCHENDO A MATRIZ [linha][col]");
+		System.out.println("PREENCHENDO A MATRIZ");
 		System.out.println("....................................");
 		for (int i=0; i<3; i++) {
 			for(int j=0; j<3; j++) {
-				System.out.printf("Digite o valor da posição [%d][%d]: ", (i+1), (j+1));
-				matiz[i][j] = leia.nextInt();
+				
+				matiz[i][j] = rand.nextInt(7);
+				System.out.print(matiz[i][j]+"\t");
 				
 				somaElementos += matiz[i][j];
 				
@@ -33,6 +36,7 @@ public class Tarefa4 {
 					somaDiagonalPrincipal += matiz[i][j];
 				}
 			}
+			System.out.println();
 			
 		}
 		System.out.println("....................................");
