@@ -34,7 +34,7 @@ public class tarefa1 {
 			maiorNumero = terceiroNumero;
 		}
 		
-		System.out.printf("\nO maior número Digitado foi o: %d",maiorNumero);
+		System.out.printf("\nO maior número Digitado foi o: %6d",maiorNumero);
 		
 	}
 }
