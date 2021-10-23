@@ -88,7 +88,7 @@ public class LojaG2Geek {
 					System.out.print(
 							"*--------------------------------------------------------------------------------------------*");
 					System.out.print("\n\nCarrinho de Compras\n");
-					System.out.print("CÓD.\t|PRODUTO \t\t\t\t\t\t|PREÇO\t\t|ESTOQUE");
+					System.out.print("CÓD.\t|PRODUTO \t\t\t\t\t\t|PREÇO\t\t|QUANTIDADE");
 					System.out.println(
 							"\n*--------------------------------------------------------------------------------------------*");
 					for (Produto product : carrinho) {
@@ -131,7 +131,7 @@ public class LojaG2Geek {
 					posicao = -1;
 
 					// Validacao quantidade no estoque
-					if (produto.get(posicaoFinal).getEstoque() > 0) {
+					if (produto.get(posicaoFinal).getEstoque() > 0) {				
 						if (validacao == "VALIDO") {
 							System.out.print("Quantidade: ");
 							quantidadeDig = scan.nextInt();
@@ -193,10 +193,18 @@ public class LojaG2Geek {
 				}
 			}
 			
-			//CHAMANDO OS MÉTODOS
-			totalPagamento = pagamento.Pagamento(valorTotal, scan);
-			limpa();
-			pagamento.notaFiscal(carrinho, totalPagamento);
+			if (!carrinho.isEmpty()) {
+				//CHAMANDO OS MÉTODOS
+				totalPagamento = pagamento.Pagamento(valorTotal, scan);
+				limpa();
+				pagamento.notaFiscal(carrinho, totalPagamento);
+			}
+			else {
+				limpa();
+				cabecalho();
+				System.out.println("SEU CARRINHO FICOU VAZIO... :(");
+			}
+			
 			
 			for(int x=0; x<5; x++) {
 	        	System.out.println();
@@ -220,7 +228,7 @@ public class LojaG2Geek {
         System.out.print("\n\n");
         System.out.print("└───── •✧✧• ─────┘\n");
         
-        for(int x=0; x<20; x++) {
+        for(int x=0; x<10; x++) {
         	System.out.println();
         }
 
