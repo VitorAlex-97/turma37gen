@@ -17,11 +17,6 @@ public class BasicSecurityConfig extends WebSecurityConfigurerAdapter{
 	@Autowired
 	private UserDetailsService userDetailsServecive;
 	
-	@Override
-	protected void configure(AuthenticationManagerBuilder auth) throws Exception {
-		auth.userDetailsService(userDetailsServecive);
-	}
-	
 	@Bean
 	public PasswordEncoder passwordEncoder() {
 		return new BCryptPasswordEncoder();
@@ -38,5 +33,13 @@ public class BasicSecurityConfig extends WebSecurityConfigurerAdapter{
 		.and().cors()
 		.and().csrf().disable();
 	}
+	
+	@Override
+ 	protected void configure (AuthenticationManagerBuilder auth) throws Exception {
+		auth.userDetailsService(userDetailsServecive);
+		
+		auth.inMemoryAuthentication()
+			.withUser("vitu").password(passwordEncoder().encode("vitu")).authorities("ROLE_ADMIN");
+ 	}
 	
 }

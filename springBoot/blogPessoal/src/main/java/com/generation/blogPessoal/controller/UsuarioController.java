@@ -16,7 +16,7 @@ import com.generation.blogPessoal.model.UsuarioLogin;
 import com.generation.blogPessoal.service.UsuarioService;
 
 @RestController
-@RequestMapping("/usuarios")
+@RequestMapping("/usuario")
 @CrossOrigin(origins = "*", allowedHeaders = "*")
 public class UsuarioController {
 
